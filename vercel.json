@@ -1,0 +1,15 @@
+{
+  "buildCommand": "npm run build",
+  "outputDirectory": "public",
+  "env": {
+    "BOT_TOKEN": "@bot_token",
+    "ADMIN_IDS": "@admin_ids",
+    "API_KEY_OPENAI": "@api_key_openai"
+  },
+  "functions": {
+    "api/**/*.py": {
+      "memory": 1024,
+      "maxDuration": 60
+    }
+  }
+}
