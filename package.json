@@ -1,0 +1,25 @@
+{
+  "name": "kizx-ubot-prem",
+  "version": "2.2.0",
+  "description": "KizxUbot Premium - Advanced Telegram Bot with 220+ modules",
+  "main": "main.py",
+  "scripts": {
+    "start": "python main.py",
+    "build": "echo 'Build complete'",
+    "dev": "python main.py"
+  },
+  "keywords": [
+    "telegram",
+    "bot",
+    "broadcast",
+    "spam-detection",
+    "ai",
+    "python"
+  ],
+  "author": "Kizx Development",
+  "license": "MIT",
+  "engines": {
+    "node": "18.x",
+    "python": "3.11.x"
+  }
+}
