@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KizxUbot Setup Assistant</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Courier New', monospace;
+            background: #1e1e1e;
+            color: #d4d4d4;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #252526;
+            border: 1px solid #3e3e42;
+            border-radius: 5px;
+            padding: 20px;
+        }
+
+        .header {
+            border-bottom: 2px solid #007acc;
+            padding-bottom: 15px;
+            margin-bottom: 20px;
+        }
+
+        .header h1 {
+            color: #4ec9b0;
+            margin-bottom: 5px;
+        }
+
+        .header p {
+            color: #858585;
+            font-size: 0.9em;
+        }
+
+        .section {
+            margin-bottom: 25px;
+            border-left: 3px solid #007acc;
+            padding-left: 15px;
+        }
+
+        .section h2 {
+            color: #4ec9b0;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+
+        .step {
+            background: #1e1e1e;
+            border: 1px solid #3e3e42;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 3px;
+        }
+
+        .step-title {
+            color: #ce9178;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
+        .step-content {
+            color: #d4d4d4;
+            line-height: 1.6;
+        }
+
+        .code-block {
+            background: #1e1e1e;
+            border: 1px solid #3e3e42;
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 3px;
+            overflow-x: auto;
+            color: #ce9178;
+            font-size: 0.95em;
+        }
+
+        .warning {
+            background: #5a4a42;
+            border-left: 3px solid #ff6b6b;
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 3px;
+        }
+
+        .success {
+            background: #42554a;
+            border-left: 3px solid #6ec96e;
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 3px;
+        }
+
+        .info {
+            background: #424554;
+            border-left: 3px solid #4ec9b0;
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 3px;
+        }
+
+        .file-list {
+            background: #1e1e1e;
+            border: 1px solid #3e3e42;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 3px;
+        }
+
+        .file-item {
+            padding: 5px 0;
+            color: #ce9178;
+        }
+
+        .button {
+            background: #007acc;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            font-family: 'Courier New', monospace;
+            margin-top: 10px;
+        }
+
+        .button:hover {
+            background: #005a9e;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 10px 0;
+        }
+
+        th, td {
+            border: 1px solid #3e3e42;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background: #1e1e1e;
+            color: #4ec9b0;
+        }
+
+        .footer {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 2px solid #3e3e42;
+            text-align: center;
+            color: #858585;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🤖 KizxUbot Premium - Setup Assistant</h1>
+            <p>Complete guide untuk setup bot di panel hosting Anda</p>
+        </div>
+
+        <!-- Step 1 -->
+        <div class="section">
+            <h2>📥 Step 1: Download Files</h2>
+            <div class="step">
+                <div class="step-title">Option A: Download dari GitHub (Recommended)</div>
+                <div class="step-content">
+                    <p>1. Buka: <code style="background: #1e1e1e; padding: 2px 5px;">https://github.com/firdausaliff649-byte/KizxUbotPrem</code></p>
+                    <p>2. Click tombol hijau "Code"</p>
+                    <p>3. Pilih "Download ZIP"</p>
+                    <p>4. File: <code style="background: #1e1e1e; padding: 2px 5px;">KizxUbotPrem-main.zip</code></p>
+                </div>
+            </div>
+
+            <div class="step">
+                <div class="step-title">Option B: Clone dengan Git</div>
+                <div class="code-block">
+git clone https://github.com/firdausaliff649-byte/KizxUbotPrem.git
+                </div>
+            </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="section">
+            <h2>📤 Step 2: Upload ke Panel Hosting</h2>
+            <div class="step">
+                <div class="step-title">Via cPanel File Manager:</div>
+                <div class="step-content">
+                    <p>1. Login ke cPanel</p>
+                    <p>2. Buka "File Manager"</p>
+                    <p>3. Masuk folder: <code style="background: #1e1e1e; padding: 2px 5px;">public_html/</code></p>
+                    <p>4. Click "Upload"</p>
+                    <p>5. Upload file: <code style="background: #1e1e1e; padding: 2px 5px;">KizxUbotPrem-main.zip</code></p>
+                </div>
+            </div>
+
+            <div class="warning">
+                ⚠️ Jika folder tidak ada, buat folder baru bernama "bot" atau "telegram-bot"
+            </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="section">
+            <h2>📦 Step 3: Extract Files</h2>
+            <div class="step">
+                <div class="step-title">Menggunakan cPanel File Manager:</div>
+                <div class="step-content">
+                    <p>1. Cari file: <code style="background: #1e1e1e; padding: 2px 5px;">KizxUbotPrem-main.zip</code></p>
+                    <p>2. Right-click → Extract</p>
+                    <p>3. Tunggu proses selesai ✅</p>
+                    <p>4. Folder akan menjadi: <code style="background: #1e1e1e; padding: 2px 5px;">KizxUbotPrem-main/</code></p>
+                </div>
+            </div>
+
+            <div class="success">
+                ✅ Hasil extract: semua files sudah ada!
+            </div>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="section">
+            <h2>⚙️ Step 4: Konfigurasi .env</h2>
+            <div class="step">
+                <div class="step-title">Edit file .env di panel:</div>
+                <div class="step-content">
+                    <p>1. Buka File Manager</p>
+                    <p>2. Cari file: <code style="background: #1e1e1e; padding: 2px 5px;">.env.example</code></p>
+                    <p>3. Right-click → Edit atau Copy</p>
+                    <p>4. Rename copy menjadi: <code style="background: #1e1e1e; padding: 2px 5px;">.env</code></p>
+                    <p>5. Edit isi file:</p>
+                </div>
+
+                <div class="code-block">
+# Edit values ini:
+BOT_TOKEN=8796670391:AAESeHo9zhwB6RU4ebqik-MBZTjgNLvyU-4
+ADMIN_IDS=123456789,987654321
+DB_TYPE=sqlite
+BROADCAST_LIMIT=30
+                </div>
+
+                <div class="warning">
+                    ⚠️ PENTING: Ganti BOT_TOKEN dengan token Telegram Anda!
+                </div>
+            </div>
+        </div>
+
+        <!-- Step 5 -->
+        <div class="section">
+            <h2>🔧 Step 5: Install Dependencies</h2>
+            <div class="step">
+                <div class="step-title">Option A: Gunakan Terminal (SSH)</div>
+                <div class="code-block">
+cd ~/public_html/KizxUbotPrem-main
+pip3 install -r requirements.txt
+                </div>
+            </div>
+
+            <div class="step">
+                <div class="step-title">Option B: Via cPanel Terminal</div>
+                <div class="step-content">
+                    <p>1. Login cPanel</p>
+                    <p>2. Cari "Terminal" atau "SSH"</p>
+                    <p>3. Jalankan command di atas ☝️</p>
+                </div>
+            </div>
+
+            <div class="info">
+                ℹ️ Proses ini butuh 2-5 menit, tunggu sampai selesai!
+            </div>
+        </div>
+
+        <!-- Step 6 -->
+        <div class="section">
+            <h2>🚀 Step 6: Jalankan Bot</h2>
+            <div class="step">
+                <div class="step-title">Quick Test:</div>
+                <div class="code-block">
+cd ~/public_html/KizxUbotPrem-main
+python3 main.py
+                </div>
+                <p style="margin-top: 10px;">Jika OK, tekan Ctrl+C untuk stop</p>
+            </div>
+
+            <div class="step">
+                <div class="step-title">Setup Auto-Start (Permanent):</div>
+                <div class="step-content">
+                    <p>Gunakan Supervisor agar bot jalan otomatis:</p>
+                </div>
+
+                <div class="code-block">
+# Create config
+sudo nano /etc/supervisor/conf.d/kizx-bot.conf
+
+# Paste ini:
+[program:kizx-bot]
+command=/usr/bin/python3 /home/username/public_html/KizxUbotPrem-main/main.py
+directory=/home/username/public_html/KizxUbotPrem-main
+user=username
+autostart=true
+autorestart=true
+stderr_logfile=/home/username/logs/bot.err
+stdout_logfile=/home/username/logs/bot.log
+
+# Save: Ctrl+X → Y → Enter
+
+# Activate:
+sudo supervisorctl reread
+sudo supervisorctl update
+sudo supervisorctl start kizx-bot
+                </div>
+
+                <div class="success">
+                    ✅ Bot akan jalan otomatis dan restart jika error!
+                </div>
+            </div>
+        </div>
+
+        <!-- Step 7 -->
+        <div class="section">
+            <h2>🌐 Step 7: Akses Web Dashboard</h2>
+            <div class="step">
+                <table>
+                    <tr>
+                        <th>URL</th>
+                        <th>Keterangan</th>
+                    </tr>
+                    <tr>
+                        <td><code>https://your-domain.com/KizxUbotPrem-main/index.html</code></td>
+                        <td>Dashboard Utama</td>
+                    </tr>
+                    <tr>
+                        <td><code>https://your-domain.com/KizxUbotPrem-main/clock.html</code></td>
+                        <td>Multi-Timezone Clock</td>
+                    </tr>
+                    <tr>
+                        <td><code>https://your-domain.com/KizxUbotPrem-main/README.md</code></td>
+                        <td>Documentation</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <!-- Troubleshooting -->
+        <div class="section">
+            <h2>🐛 Troubleshooting</h2>
+            
+            <div class="step">
+                <div class="step-title">❌ Bot tidak jalan?</div>
+                <div class="code-block">
+# Check logs:
+tail -f ~/logs/bot.log
+
+# Verify .env:
+cat .env | grep BOT_TOKEN
+
+# Test Python:
+python3 --version
+                </div>
+            </div>
+
+            <div class="step">
+                <div class="step-title">❌ Import Error?</div>
+                <div class="code-block">
+# Reinstall packages:
+pip3 install --upgrade -r requirements.txt
+                </div>
+            </div>
+
+            <div class="step">
+                <div class="step-title">❌ Permission Denied?</div>
+                <div class="code-block">
+# Fix permissions:
+chmod 755 main.py
+chmod 755 start.sh
+                </div>
+            </div>
+        </div>
+
+        <!-- Files Info -->
+        <div class="section">
+            <h2>📁 File Structure</h2>
+            <div class="file-list">
+                <div class="file-item">📂 KizxUbotPrem-main/</div>
+                <div class="file-item">&nbsp;&nbsp;├── 🐍 main.py (Bot utama)</div>
+                <div class="file-item">&nbsp;&nbsp;├── ⚙️  config.py (Konfigurasi)</div>
+                <div class="file-item">&nbsp;&nbsp;├── 🔧 database.py (Database)</div>
+                <div class="file-item">&nbsp;&nbsp;├── 📢 broadcast_system.py (Broadcast)</div>
+                <div class="file-item">&nbsp;&nbsp;├── 🔍 spam_detector.py (Spam AI)</div>
+                <div class="file-item">&nbsp;&nbsp;├── 🤖 ai_module.py (GPT)</div>
+                <div class="file-item">&nbsp;&nbsp;├── .env (⚠️ EDIT INI)</div>
+                <div class="file-item">&nbsp;&nbsp;├── 📄 index.html (Dashboard)</div>
+                <div class="file-item">&nbsp;&nbsp;├── 🕐 clock.html (Clock app)</div>
+                <div class="file-item">&nbsp;&nbsp;├── 📦 requirements.txt (Dependencies)</div>
+                <div class="file-item">&nbsp;&nbsp;├── 📚 README.md (Docs)</div>
+                <div class="file-item">&nbsp;&nbsp;└── 📁 data/ (Database folder)</div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>🤖 KizxUbot Premium v2.2.0 | 220+ Modules | Production Ready</p>
+            <p>📍 GitHub: https://github.com/firdausaliff649-byte/KizxUbotPrem</p>
+            <p>Made with ❤️ by Kizx Development</p>
+        </div>
+    </div>
+</body>
+</html>
